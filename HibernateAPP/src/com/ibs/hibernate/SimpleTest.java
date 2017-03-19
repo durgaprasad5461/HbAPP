@@ -26,7 +26,9 @@ public class SimpleTest {
 
 		Transaction tx = session.beginTransaction();
 		session.save(student);
+		System.out.println("************");
 		System.out.println("Object saved successfully.....!!");
+		System.out.println("************");
 		tx.commit();
 		session.close();
 		factory.close();
